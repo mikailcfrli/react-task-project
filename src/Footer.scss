@@ -1,0 +1,82 @@
+@import "variables";
+footer {
+  .leftpart {
+    padding-bottom: 64px;
+    padding-top: 96px;
+    img {
+      margin-bottom: 32px;
+    }
+    h2 {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 58px;
+      color: #232536;
+      margin-bottom: 40px;
+      width: 453px;
+    }
+    h4 {
+      font-family: $main-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 36px;
+      color: #232536;
+      margin-bottom: 28px;
+    }
+    p.plarge {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #232536;
+    }
+    p.psmall {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: #232536;
+      margin-top: 16px;
+      width: 206px;
+    }
+    div.aline {
+      width: 268px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      margin-top: 14px;
+    }
+  }
+}
+.pink-footer {
+  background-color: $backgroud-brown;
+
+  .bottom-logos {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 42px;
+  }
+  .socials {
+    display: flex;
+    gap: 26.68px;
+  }
+}
+@media (min-width: 320px) and (max-width: 500px) {
+  footer .leftpart h2 {
+    width: 100%;
+  }
+  .lasttouch {
+    margin-top: 50px;
+  }
+  .pink-footer .flex-spacebetween {
+    flex-direction: column;
+  }
+  .hero-section .hero-div {
+    width: 80%;
+  }
+}
