@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Header.scss';
 import logo from './Logo.svg'
 import Icon from './pages/HomePage/Icon.svg'
@@ -9,14 +10,14 @@ export const Header = () => {
           <img src={logo} alt="" />
         </div>
         <div className="navigation">
-          <a href="">Home</a>
-          <a href="">Service</a>
-          <a href="">Company</a>
+          <Link to="/">Home</Link>
+          <a href="login">Service</a>
+          <Link to="/ceo">Company</Link>
           <a href="">Career</a>
           <a href="">Blog</a>
           <a href="">Contact us</a>
           <div>
-            <a href="">Clone project</a> <img src={Icon} alt="" />
+            <Link to="/register">Clone project</Link> <img src={Icon} alt="" />
           </div>
         </div>
       </div>
